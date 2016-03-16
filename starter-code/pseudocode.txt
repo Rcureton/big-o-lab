@@ -7,6 +7,11 @@ func insertionSort( var a as array )
                 swap a[j] and a[j-1]
 end func
 
+Quadratic(O(n^2))
+If a single for loop operates in O(n) time, then it makes sense that a nested for loop would operate in O(n^2) time:
+
+
+
 Merge Sort:
 
 func mergeSort( var a as array )
@@ -20,6 +25,10 @@ func mergeSort( var a as array )
 
      return merge( l1, l2 )
 end func
+
+O(n(log(n))
+  func mergeSort is linearithmic because we must Merge Sort in this method to efficiently Divide and Sort
+
 
 func merge( var a as array, var b as array )
      var c as array
@@ -39,6 +48,10 @@ func merge( var a as array, var b as array )
           remove b[0] from b
      return c
 end func
+
+(O(n log n))
+ It is this function because we have to divide and conquer
+
 
 Selection Sort:
 
@@ -64,6 +77,9 @@ for (j = 0; j < n-1; j++) {
         swap(a[j], a[iMin]);
     }
 }
+
+(O(n)^2)
+There are two single loops in the method that both count n Times so the time remains the same.
 
 Quick Sort:
 
